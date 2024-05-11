@@ -1,0 +1,4 @@
+[
+    {"label": "Test #1", "mod": "app_test1.mjs"},
+    {"label": "Another test", "mod": "app_test2.mjs"}
+]
