@@ -1,8 +1,10 @@
 export class Router {
+    /** @type {Set<string>} */
+    s;
+
     constructor(ps = ';', is = ',') {
         this.ps = ps
         this.is = is
-        this.s = new Set()
     }
 
     parse(src = location.search) {
@@ -11,6 +13,6 @@ export class Router {
             src.split(this.ps, 1)[0]
                 .split(this.is)
         )
-        return this
+        return this.s
     }
 }

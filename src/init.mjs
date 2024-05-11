@@ -1,12 +1,11 @@
 //RootWin
-import APPS from './apps.json'
+// TODO: import APPS from './apps.json'
 import {Router} from './router.mjs'
 
 export const router =  new Router()
 
 function init() {
     router.parse()
-    console.trace(APPS)
 
     const root = document.createElement('div')
     root.className = 'root'
