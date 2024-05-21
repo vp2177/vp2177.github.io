@@ -5,9 +5,10 @@
         <link rel="stylesheet" href="./src/styles/root.css" />
         <script type="importmap">
             {   "imports": {
-                "react": "//esm.run/preact@10",
-                "react-dom/client": "//esm.run/preact@10",
-                "jquery": "//esm.run/jquery@3"
+                "react": "//esm.run/react@18",
+                "react-dom/client": "//esm.run/react-dom@18/client",
+                "jquery": "//esm.run/jquery@3",
+                "preact": "//esm.run/preact@10"
             }}
         </script>
         <script src="./src/init.mjs" type="module"></script>
@@ -17,7 +18,7 @@
         <noscript>JavaScript required</noscript>
         <style>
             body {
-                background-color: lime;
+                background-color: greenyellow;
             }
         </style>
         <main id="main"></main>

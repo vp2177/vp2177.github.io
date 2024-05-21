@@ -1,7 +1,7 @@
 // TODO: import APPS from './apps.json'
 import {getComponents} from './router.mjs'
 import {createElement as e} from 'react'
-import * as RD from 'react-dom/client'
+import RD from 'react-dom/client'
 
 function init() {
     console.info(/*R?.version*/)
