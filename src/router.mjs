@@ -1,20 +1,11 @@
-export class Router {
-    /** @type {Set<string>} */
-    s;
+export function getComponents(src = location.search, replace = /^\?/, comma = ',', semicolon = ';') { 
+    return src.replace(replace, '').split(semicolon, 1)[0].split(comma)
+}
 
-    constructor(ps = ';', is = ',', strip = /^\?/) {
-        this.ps = ps
-        this.is = is
-        this.strip = strip
-    }
-
-    parse(src = location.search) {
-        //console.trace(src)
-        this.s = new Set( 
-            src.replace(this.strip, '') 
-                .split(this.ps, 1)[0]
-                .split(this.is)
-        )
-        return this.s
-    }
+/**
+ * Set `location.search` with components
+ * @param {string[]} cs
+ */
+export function setComponentsQ(cs, extra = '', comma = ',', semicolon = ';') {
+    location.search = cs.join(comma) + (extra? semicolon + extra : '')
 }
