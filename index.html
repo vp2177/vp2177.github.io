@@ -2,23 +2,26 @@
 <html>
     <head>
         <!-- TODO: add CSS from JS? -->
-        <meta name="description_TODO" content="" />
+        <meta name="description" content="TODO" />
         <link rel="stylesheet" href="./src/styles/root.css" />
         <script type="importmap">
             {   "imports": {
-                "react": "TODO",
-                "react-dom": "",
-                "jquery": ""
+                "react": "//esm.run/react@18",
+                "react-dom": "//esm.run/react-dom@18",
+                "jquery": "//esm.run/jquery@3",
+                "preact": "//esm.run/preact"
             }}
         </script>
         <script src="./src/init.mjs" type="module"></script>
+        <title>- built at {{site.time}}</title>
     </head>
     <body>
         <noscript>JavaScript required</noscript>
         <style>
             body {
-                background-color: greenyellow;
+                background-color: plum;
             }
         </style>
+        <main id="main"></main>
     </body>
 </html>
