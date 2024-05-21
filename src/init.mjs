@@ -4,11 +4,7 @@ import R, {createElement as e} from 'react'
 import RD from 'react-dom/client'
 
 function init() {
-    try {
-        console.info(router.parse(), R.version)
-    } catch {
-        console.warn('!')
-    }
+    console.info(R.version)
 
     const _main = document.querySelector('#main')
     const _root = RD.createRoot(_main)
