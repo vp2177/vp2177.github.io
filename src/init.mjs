@@ -13,6 +13,7 @@ function init() {
     _root.render(e(RootWindow, null,
         e(MovableWindow, {}, e(TickingClock) )
     ))
+    window.___root = _root // Keep object so useState/useEffect etc. work?
 }
 
 init()
