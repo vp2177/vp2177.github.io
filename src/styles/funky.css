@@ -2,15 +2,15 @@
 
 .window {
     background-color: white;
-    border: 1px solid dimgray;
+    border: 1px outset dimgray;
 
     /* TODO: & nesting */
 }
 .window header {
-    background-color: black;
+    background-image: linear-gradient(to bottom right, lightgray, dimgray, black);
     color: gainsboro;
 }
 
-#main {
+.rootWindow {
     background-color: orange;
 }
