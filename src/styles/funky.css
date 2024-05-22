@@ -1,0 +1,13 @@
+.window {
+    background-color: white;
+
+    /* TODO: & nesting */
+}
+.window header {
+    background-color: black;
+    color: gainsboro;
+}
+
+#main {
+    background-color: orange;
+}
