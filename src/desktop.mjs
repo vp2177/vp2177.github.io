@@ -6,9 +6,12 @@ export function TickingClock({showDate = false, updateInterval = 2000}) {
     const _min = now.getMinutes().toString().padStart(2, '0')
     const _sec = now.getSeconds().toString().padStart(2, '0')
     // TODO: memoize (if needed)
-    const [n, setN] = useState(0)
+    const [n, setN] = [-1, () => {}] //useState(0)
     useEffect(() => {
-        const i = setInterval(() => setN((n) => n+1), updateInterval)
+        const i = setInterval(() => {
+            setN((n) => n+1)
+            console.info('Tock..')
+        }, updateInterval)
         return () => clearInterval(i)
     }, [])
 
