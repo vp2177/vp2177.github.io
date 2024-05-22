@@ -10,7 +10,7 @@ function init() {
 
     const _main = document.querySelector('#main')
     const _root = RD.createRoot(_main)
-    _root.render(e(MovableWindow, {}, ['foo', 'Bar'], e(TickingClock) ))
+    _root.render(e(MovableWindow, {}, e(TickingClock) ))
 }
 
 init()
